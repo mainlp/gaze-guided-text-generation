@@ -9,10 +9,12 @@ pandas==2.2.3
 pyreadr==0.5.2
 rpy2==3.5.17
 scikit-learn==1.6.1
+scipy==1.16.2
 seaborn==0.13.2
 spacy==3.8.7
 statsmodels==0.14.5
 textstat==0.7.10
-transformers==4.48.3
 torch==2.6.0
+tqdm==4.67.1
+transformers==4.48.3
 wordfreq==3.1.1

@@ -214,7 +214,7 @@ class CausalTransformerGazeModel(nn.Module, GazeModel):
             self.eval()
             dev_loss = 0
             for batch in dev_dataloader:
-                batch = {key: value.cuda() for key, value in batch.items()}
+                batch = {key: value.to(self.device) for key, value in batch.items()}
                 gaze_labels = batch.pop("gaze_label")
                 with torch.no_grad():
                     gaze_outputs = self(**batch)
