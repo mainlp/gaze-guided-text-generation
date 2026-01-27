@@ -1,8 +1,15 @@
 # Gaze-controlled text generation
 
-This repository contains the code and data for reproducing the results and figures in the paper _Controlling Reading Ease with Gaze-Guided Text Generation_.
+This repository contains the code for reproducing the results and figures in the paper [_Controlling Reading Ease with Gaze-Guided Text Generation_](https://arxiv.org/abs/2601.17781) (EACL 2026).
 
-## Contents and structure
+<div style="text-align: center">
+    <img width="60%" src="paper/figures/overview.png">
+    <br>
+    <a href="https://arxiv.org/abs/2601.17781" style="font-weight: bold">📄 Paper</a>
+    | <a href="https://osf.io/rhgbk" style="font-weight: bold">💾 Dataset</a>
+</div>
+
+## Contents
 
 **Code:**
 
@@ -14,8 +21,8 @@ This repository contains the code and data for reproducing the results and figur
 **Data:**
 
 - `emtec/`: Scripts for downloading and converting the EMTeC dataset ([Bolliger et al., 2024](https://doi.org/10.3758/s13428-025-02677-4))
-- `eyetracking/`: Preprocessed gaze data from the eye-tracking study
-- `responses/`: Response data from the eye-tracking study (comprehension questions and ratings)
+- `eyetracking/`: Preprocessed gaze data from the eye-tracking study (corresponds to `gaze/measures/cleaned.zip` in the [dataset repository](https://osf.io/rhgbk))
+- `responses/`: Response data from the eye-tracking study (comprehension questions and ratings; corresponds to `responses/responses.csv` in the [dataset repository](https://osf.io/rhgbk))
 
 **Outputs:**
 
@@ -64,3 +71,9 @@ python generate.py \
 ### Analysis
 
 [`analysis.ipynb`](analysis.ipynb) contains all the code necessary to reproduce the statistical analyses and figures in the paper.
+
+## License
+
+- The code in this repository is licensed under MIT.
+- The dataset containing the generated texts, eye-tracking and response data is available [here](https://osf.io/rhgbk) and licensed under CC-BY-NC.
+- The EMTeC dataset is available [here](https://osf.io/ajqze) and licensed under CC-BY.
