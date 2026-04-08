@@ -1,13 +1,13 @@
 # Gaze-controlled text generation
 
-This repository contains the code for reproducing the results and figures in the paper [_Controlling Reading Ease with Gaze-Guided Text Generation_](https://arxiv.org/abs/2601.17781) (EACL 2026).
+This repository contains the code for reproducing the results and figures in the paper [_Controlling Reading Ease with Gaze-Guided Text Generation_](https://doi.org/10.18653/v1/2026.eacl-long.107) (EACL 2026).
 
-<div style="text-align: center">
+<p align="center">
     <img width="60%" src="paper/figures/overview.png">
     <br>
-    <a href="https://arxiv.org/abs/2601.17781" style="font-weight: bold">📄 Paper</a>
+    <a href="https://doi.org/10.18653/v1/2026.eacl-long.107" style="font-weight: bold">📄 Paper</a>
     | <a href="https://osf.io/rhgbk" style="font-weight: bold">💾 Dataset</a>
-</div>
+</p>
 
 ## Contents
 
@@ -71,6 +71,27 @@ python generate.py \
 ### Analysis
 
 [`analysis.ipynb`](analysis.ipynb) contains all the code necessary to reproduce the statistical analyses and figures in the paper.
+
+## Citation
+
+Please cite [this paper](https://doi.org/10.18653/v1/2026.eacl-long.107) if you use the code or data in this repository:
+
+```bibtex
+@inproceedings{sauberli-etal-2026-controlling,
+    title = "Controlling Reading Ease with Gaze-Guided Text Generation",
+    author = {S{\"a}uberli, Andreas and Jepifanova, Darja and Frassinelli, Diego and Plank, Barbara},
+    editor = "Demberg, Vera and Inui, Kentaro and Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.107/",
+    doi = "10.18653/v1/2026.eacl-long.107",
+    pages = "2383--2397",
+    ISBN = "979-8-89176-380-7"
+}
+```
 
 ## License
 
